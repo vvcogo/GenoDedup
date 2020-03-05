@@ -1,4 +1,4 @@
-package genompress;
+package genodedup;
 
 import data.DataContainer;
 import workflows.Workflow;
@@ -68,7 +68,7 @@ public class GenoDedup extends Workflow {
 
 	public static void main(String[] args) {
 		if (args.length != 2) {
-			System.out.println("java Genompress <original_file> <conf_file>");
+			System.out.println("java GenoDedup <original_file> <conf_file>");
 			System.exit(1);
 		}
 		new GenoDedup(args[0], args[1]);
